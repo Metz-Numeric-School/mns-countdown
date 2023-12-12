@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  background-color: #ffe2da;
+  color: #ff5e2b;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.countdown h2, .countdown p {
+  margin-bottom: 0;
+}
+
+.countdown h2 {
+  line-height: 100%;
+  margin: 0 auto;
+}
+
+.countdown p {
+  margin: 0 auto;
+}
+
+.countdown {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.countdown-header{
+    padding: 1em;
+    text-align: center;
+}
+
+h1{ text-transform: uppercase; color: #222;}
+
+.countdown-header img{
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.countdown-content,
+.countdown-content-final {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    min-height: calc(100vh - 366px);
+}
+
+.countdown-content-item {
+    text-align: center;
+}
+
+.countdown-content h2,
+.countdown-content-final h2 {
+    font-size: 100px;
+}
+
+.countdown-content-final {
+  display: none;
+}

@@ -4,7 +4,7 @@ const minutesElement = countdownElement.querySelector('#minutes');
 const secondsElement = countdownElement.querySelector('#seconds');
 
 // EVENT DATE
-const endDate = new Date('2023-12-13 08:30:00');
+const endDate = new Date('2023-12-14 16:00:00');
 let secondsLeft = (endDate.getTime() - new Date().getTime()) / 1000;
 
 function updateCountdown() {

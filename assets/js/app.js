@@ -1,4 +1,6 @@
 const countdownElement = document.getElementById('countdown');
+const monthsElement = countdownElement.querySelector('#months');
+const daysElement = countdownElement.querySelector('#days');
 const hoursElement = countdownElement.querySelector('#hours');
 const minutesElement = countdownElement.querySelector('#minutes');
 const secondsElement = countdownElement.querySelector('#seconds');
@@ -9,6 +11,12 @@ let secondsLeft = (endDate.getTime() - new Date().getTime()) / 1000;
 
 function updateCountdown() {
   secondsLeft -= 1;
+
+  const months = Math.floor(secondsLeft / (86400 * 30));
+  monthsElement.textContent = months < 10 ? '0' + months : months;
+
+  const days = Math.floor((secondsLeft / 86400) % 30);
+  daysElement.textContent = days < 10 ? '0' + days : days;
 
   const hours = Math.floor((secondsLeft % 86400) / 3600);
   hoursElement.textContent = hours < 10 ? '0' + hours : hours;

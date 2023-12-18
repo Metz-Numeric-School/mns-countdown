@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  background-color: #ffe2da;
+  background-color: #151b36;
   color: #ff5e2b;
 }
 
@@ -37,7 +37,7 @@ body {
     text-align: center;
 }
 
-h1{ text-transform: uppercase; color: #222;}
+h1{ text-transform: uppercase; color: #fefefe;}
 
 .countdown-header img{
     height: 80px;
